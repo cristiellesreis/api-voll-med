@@ -17,10 +17,11 @@ public record DadosCadastroMedicos(
         String email,
 
         @NotBlank
+        @Pattern(regexp = "^\\(\\d{2}\\) \\d{4,5}-\\d{4}$")
         String telefone,
 
         @NotBlank
-        @Pattern(regexp = "\\d{4,6}")
+        @Pattern(regexp = "\\d{6}-\\d{2}/[A-Z]{2}")
         String crm,
 
         @NotNull

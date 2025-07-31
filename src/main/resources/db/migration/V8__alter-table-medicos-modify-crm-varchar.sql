@@ -1,0 +1,1 @@
+ALTER TABLE medicos MODIFY crm VARCHAR(20);
